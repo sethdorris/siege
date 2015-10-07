@@ -38,17 +38,65 @@ body {
 nav > ul > li {
 	text-decoration: none;
 	list-style-type: none;
-	display: inline;
-	margin: 20px 20px 10px 0px;
+	padding: 10px 70px 10px 70px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	background: #222;
+	text-align: center;
+}
+
+nav > ul > li:hover {
+	background: #555;
+	cursor: hand;
 }
 
 nav > ul {
-	margin-top: 20px;
+	padding: 0;
 	position: absolute;
-	right: 0;
+	right: -300px;
 }
 
 .firstLetter {
 	color: #D6D2B4;
 	font-weight: 800;
+}
+
+@keyframes navslide {
+	from {
+		position: absolute;
+		right: -300px;
+	}
+	to {
+		position: absolute;
+		right: 0;
+	}
+}
+
+@keyframes navslideClose {
+	from {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+}
+
+.active {
+	animation: 2s navslide;
+	animation-fill-mode: forwards;
+}
+
+.closed {
+	animation: 2s navslideClose;
+	animation-fill-mode: forwards;
+}
+
+#closeMenu {
+	font-size: 7pt;
+	color: #999;
 }
