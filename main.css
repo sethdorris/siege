@@ -1,0 +1,54 @@
+body {
+	background: url('background.jpg'), linear-gradient(gray 0%, white 33%, black 100%);
+	background-image: url('background.jpg'),
+			-webkit-linear-gradient(gray 0%, white 33%, black 100%);
+
+			background-blend-mode: multiply;
+	-webkit-background-blend-mode: multiply;
+	
+	background-repeat: none;
+	background-size: cover;
+	font-family: "Raleway", sans-serif;
+	color: white;
+}
+
+@keyframes rollingSmoke {
+	from{
+		background-position: 0;
+		opacity: .2;
+	}
+	to {
+		background-position: 1000px;
+		opacity: .2;
+	}
+}
+
+.smoke {
+	animation: 60s rollingSmoke infinite;
+	background: url('smoke.png');
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	bottom: -100;
+}
+
+/*Nav Menu Styling */
+nav > ul > li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+	margin: 20px 20px 10px 0px;
+}
+
+nav > ul {
+	margin-top: 20px;
+	position: absolute;
+	right: 0;
+}
+
+.firstLetter {
+	color: #D6D2B4;
+	font-weight: 800;
+}

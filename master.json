@@ -1,0 +1,26 @@
+{
+    "users": [
+                {
+                "name": "",
+                "alias": "",
+                "uid": "",
+                "rank": "",
+                "singlesW": "0",
+                "singlesL": "0"        
+                }
+            ],
+    "challenges": [
+                    {
+                    "challenger": "",
+                    "gettingchallenged": "",
+                    "accepted": ""
+                    }
+                ],
+    "matches": [
+                    {
+                    "challengerscore": "",
+                    "gettingchallengedscore": "",
+                    "reported": ""
+                    }
+                ]
+}
