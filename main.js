@@ -22,9 +22,3 @@ main.config(['$routeProvider', function ($routeProvider) {
 		redirectTo: '/'
 	});
 }])
-
-
-.run(function ($rootScope, Auth) {
-	var ref = new Firebase("https://gtxtfantasy.firebaseio.com");
-	$rootScope.auth = ref.getAuth();
-});

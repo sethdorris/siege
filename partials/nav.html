@@ -1,8 +1,10 @@
-<div id="menuBtn" ng-click="menuButton()">Menu</div>
+<div>
+	<span id="menuBtn" ng-click="menuButton()">Menu</span>
+</div>
 
 <nav>
 	<ul>
-		<li><span class="firstLetter">N</span>ews</li>
+		<li id="news"><a href="#" ng-click="newsLink()" class="link"><span class="firstLetter">N</span>ews</a></li>
 		<li><span class="firstLetter">R</span>oster</li>
 		<li><span class="firstLetter">R</span>anks</li>
 		<li><span class="firstLetter">A</span>pply</li>

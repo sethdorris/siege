@@ -48,7 +48,6 @@ nav > ul > li {
 
 nav > ul > li:hover {
 	background: #555;
-	cursor: hand;
 }
 
 nav > ul {
@@ -57,11 +56,14 @@ nav > ul {
 	right: -300px;
 }
 
+/*Class for the styling of the first letter of each link*/
 .firstLetter {
 	color: #D6D2B4;
 	font-weight: 800;
 }
 
+/* This is section that handles NAV animations */
+/* Nav Slide Out */
 @keyframes navslide {
 	from {
 		position: absolute;
@@ -72,7 +74,7 @@ nav > ul {
 		right: 0;
 	}
 }
-
+/*Nav Close Animation */
 @keyframes navslideClose {
 	from {
 		position: absolute;
@@ -86,17 +88,50 @@ nav > ul {
 	}
 }
 
+@keyframes clickedFlash {
+	0% {
+		background: #555;
+	}
+
+	50% {
+		background: #222;
+	}
+	100% {
+		background: #555;
+	}
+}
+
+/*Class that contains the animation when the nav menu opens*/
 .active {
 	animation: 2s navslide;
 	animation-fill-mode: forwards;
 }
 
+/*Class that contains the animation when the nav menu closes*/
 .closed {
 	animation: 2s navslideClose;
 	animation-fill-mode: forwards;
 }
 
+/*close menu button style*/
 #closeMenu {
 	font-size: 7pt;
 	color: #999;
+	cursor: hand;
 }
+
+/*Class that gives the flash to the link when clicked */
+.clickedLink {
+	animation: .2s clickedFlash 3;
+}
+
+/*Class for the styling of the anchor tags in the nav menu*/
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
