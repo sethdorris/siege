@@ -2,20 +2,36 @@ main.controller("navcontroller", function ($scope) {
 	
 	$scope.menuButton = function () {
 		$('#menuBtn').hide();
-		$("nav > ul").removeClass('closed');
-		$("nav > ul").addClass('active');
+		$(".mainnavul").removeClass('closed');
+		$(".mainnavul").addClass('active');
 
 	}
 
 	$scope.closeNav = function () {
-		$('nav > ul').removeClass('active');
-		$('nav > ul > li').removeClass('clickedLink')
-		$('nav > ul').addClass('closed');
+		$('.mainnavul').removeClass('active');
+		$('.mainnavlinks').removeClass('clickedLink')
+		$('.mainnavul').addClass('closed');
 		$('#menuBtn').show();
 	}
 	
 	$scope.newsLink = function () {
 		$('#news').addClass('clickedLink');
+	}
+
+	$scope.rosterLink = function () {
+		$('#roster').addClass('clickedLink');
+	}
+
+	$scope.ranksLink = function () {
+		$('#ranks').addClass('clickedLink');
+	}
+
+	$scope.applyLink = function () {
+		$('#apply').addClass('clickedLink');
+	}
+
+	$scope.forumsLink = function () {
+		$('#forums').addClass('clickedLink');
 	}
 
 });  //This is the end of the Controller

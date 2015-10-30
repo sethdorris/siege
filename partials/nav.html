@@ -1,14 +1,13 @@
-<div>
-	<span id="menuBtn" ng-click="menuButton()">Menu</span>
-</div>
-
 <nav>
-	<ul>
-		<li id="news"><a href="#" ng-click="newsLink()" class="link"><span class="firstLetter">N</span>ews</a></li>
-		<li><span class="firstLetter">R</span>oster</li>
-		<li><span class="firstLetter">R</span>anks</li>
-		<li><span class="firstLetter">A</span>pply</li>
-		<li><span class="firstLetter">F</span>orums</li>
-		<li id="closeMenu" ng-click="closeNav()">CLOSE</li>
+	<ul class="menuul">
+		<li id="menuBtn" ng-click="menuButton()"><span class="firstLetter">M</span>enu</li></span>
+	</ul>
+	<ul class="mainnavul">
+		<li id="news" class="mainnavlinks"><a href="#" ng-click="newsLink()" class="link"><span class="firstLetter">N</span>ews</a></li>
+		<li id="roster" class="mainnavlinks"><a href="#" ng-click="rosterLink()"><span class="firstLetter">R</span>oster</a></li>
+		<li id="ranks" class="mainnavlinks"><a href="#" ng-click="ranksLink()"><span class="firstLetter">R</span>anks</a></li>
+		<li id="apply" class="mainnavlinks"><a href="#" ng-click="applyLink()"><span class="firstLetter">A</span>pply</a></li>
+		<li id="forums" class="mainnavlinks"><a href="#" ng-click="forumsLink()"><span class="firstLetter">F</span>orums</a></li>
+		<li id="closeMenu" class="mainnavlinks" ng-click="closeNav()">CLOSE</li>
 	</ul>
 </nav>

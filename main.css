@@ -35,7 +35,7 @@ body {
 }
 
 /*Nav Menu Styling */
-nav > ul > li {
+.mainnavlinks {
 	text-decoration: none;
 	list-style-type: none;
 	padding: 10px 70px 10px 70px;
@@ -46,11 +46,16 @@ nav > ul > li {
 	text-align: center;
 }
 
-nav > ul > li:hover {
+.mainnavlinks:hover {
 	background: #555;
 }
 
-nav > ul {
+/*menu button unordered list on left panel*/
+.menuul {
+	list-style-type: none;
+}
+
+.mainnavul {
 	padding: 0;
 	position: absolute;
 	right: -300px;
@@ -133,5 +138,11 @@ nav a:hover,
 nav a:active {
 	text-decoration: none;
 	color: inherit;
+}
+
+#menudiv {
+	width: 50px;
+	height: 30px;
+	display: inline-block;
 }
 
