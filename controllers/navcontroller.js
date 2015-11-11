@@ -1,17 +1,17 @@
 main.controller("navcontroller", function ($scope) {
 	
 	$scope.menuButton = function () {
-		$('#menuBtn').hide();
 		$(".mainnavul").removeClass('closed');
 		$(".mainnavul").addClass('active');
-
+		$("#menuBtn").addClass('menuButtonFadeOut')
 	}
 
 	$scope.closeNav = function () {
 		$('.mainnavul').removeClass('active');
-		$('.mainnavlinks').removeClass('clickedLink')
+		$('.mainnavlinks').removeClass('clickedLink');
 		$('.mainnavul').addClass('closed');
-		$('#menuBtn').show();
+		$('#menuBtn').removeClass('menuButtonFadeOut');
+		$('#menuBtn').addClass('menuButtonFadeIn');
 	}
 	
 	$scope.newsLink = function () {

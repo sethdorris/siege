@@ -6,7 +6,7 @@ body {
 			background-blend-mode: multiply;
 	-webkit-background-blend-mode: multiply;
 	
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Raleway", sans-serif;
 	color: white;
@@ -26,12 +26,11 @@ body {
 .smoke {
 	animation: 60s rollingSmoke infinite;
 	background: url('smoke.png');
-	background-size: cover;
+	/*background-size: cover;*/
 	width: 100%;
 	height: 400px;
-	overflow: hidden;
 	position: absolute;
-	bottom: -100;
+	bottom: 0;
 }
 
 /*Nav Menu Styling */
@@ -53,6 +52,9 @@ body {
 /*menu button unordered list on left panel*/
 .menuul {
 	list-style-type: none;
+	position: absolute;
+	top: 15px;
+
 }
 
 .mainnavul {
@@ -73,10 +75,12 @@ body {
 	from {
 		position: absolute;
 		right: -300px;
+		top: 0;
 	}
 	to {
 		position: absolute;
 		right: 0;
+		top: 0;
 	}
 }
 /*Nav Close Animation */
@@ -104,6 +108,34 @@ body {
 	100% {
 		background: #555;
 	}
+}
+
+@keyframes menuFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes menuFadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.menuButtonFadeIn {
+	animation: 1s menuFadeIn;
+	animation-fill-mode: forwards;
+}
+
+.menuButtonFadeOut {
+	animation: 1s menuFadeOut;
+	animation-fill-mode: forwards;
 }
 
 /*Class that contains the animation when the nav menu opens*/
@@ -145,4 +177,10 @@ nav a:active {
 	height: 30px;
 	display: inline-block;
 }
+
+#menuBtn:hover {
+	cursor: hand;
+}
+
+
 
