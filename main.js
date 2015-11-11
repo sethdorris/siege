@@ -3,20 +3,20 @@ var main = angular.module("main", ["ngRoute", "firebase", "angular.filter"]);
 main.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'partials/callback.html',
-		controller: 'welcomeController'
+		templateUrl: 'partials/news.html',
+		controller: 'rosterController'
 	})
-	.when('/callback', {
-		templateUrl: 'partials/callback.html',
-		controller: 'welcomeController'
+	.when('/roster', {
+		templateUrl: 'partials/roster.html',
+		controller: 'rosterController'
 	})
-	.when('/ppsingles', {
-		templateUrl: 'partials/singles.html',
-		controller: 'singlesController'
+	.when('/apply', {
+		templateUrl: 'partials/apply.html',
+		controller: 'rosterController'
 	})
-	.when('/profile', {
-		templateUrl: 'partials/profile.html',
-		controller: 'profileController'
+	.when('/ranks', {
+		templateUrl: 'partials/ranks.html',
+		controller: 'rosterController'
 	})
 	.otherwise({
 		redirectTo: '/'
