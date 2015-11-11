@@ -182,5 +182,52 @@ nav a:active {
 	cursor: hand;
 }
 
+/*This is the styling for the ranks page */
+
+#rankTable {
+	margin: 100px;
+	border: 1px solid tan;
+	text-align: center;
+}
+
+#colpng {
+	height: 3%;
+	width: 9%;
+}
+
+#ltcpng {
+	height: 5%;
+	width: 7%;
+}
+
+.rankName {
+	font-size: 8pt;
+}
+
+#rankNameLTC {
+	position: relative;
+	top: 5px;
+}
+
+#majpng {
+	height: 5%;
+	width: 8%;
+}
+
+#rankNameMAJ {
+	position: relative;
+	top: 5px;
+}
+
+#cptpng {
+	height: 6%;
+	width: 8%;
+}
+
+#rankNameCPT {
+	position: relative;
+	top: 7px;
+}
+
 
 
