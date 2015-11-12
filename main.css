@@ -186,18 +186,17 @@ nav a:active {
 
 #rankTable {
 	margin: 100px;
-	border: 1px solid tan;
 	text-align: center;
 }
 
 #colpng {
-	height: 3%;
-	width: 9%;
+	height: 2%;
+	width: 6%;
 }
 
 #ltcpng {
-	height: 5%;
-	width: 7%;
+	height: 4%;
+	width: 4%;
 }
 
 .rankName {
@@ -210,24 +209,88 @@ nav a:active {
 }
 
 #majpng {
-	height: 5%;
-	width: 8%;
+	height: 4%;
+	width: 4%;
 }
 
 #rankNameMAJ {
 	position: relative;
 	top: 5px;
+	text-shadow: 1px 1px 1px black;
 }
 
 #cptpng {
-	height: 6%;
-	width: 8%;
+	height: 4%;
+	width: 5%;
 }
 
 #rankNameCPT {
 	position: relative;
 	top: 7px;
+	text-shadow: 1px 1px 1px black;
 }
 
+#ltpng {
+	height: 3%;
+	width: 4%;
+}
+
+#rankName1LT {
+	text-shadow: 1px 1px 1px black;
+}
+
+#sgmpng {
+	height: 4%;
+	width: 4%;
+}
+
+#rankNameSGM {
+	text-shadow: 1px 1px 1px black;
+}
+
+#msgpng {
+	height: 4%;
+	width: 4%;
+}
+
+#rankNameMSG {
+	text-shadow: 1px 1px 1px black;
+}
+
+#sfcpng {
+	height: 4%;
+	width: 4%;
+}
+
+#rankNameSFC {
+	text-shadow: 1px 1px 1px black;
+}
+
+#ssgpng {
+	height: 3%;
+	width: 2%;
+}
+
+#rankNameSSG {
+	text-shadow: 1px 1px 1px black;
+}
+
+#sgtpng {
+	height: 3%;
+	width: 2%;
+}
+
+#rankNameSGT {
+	text-shadow: 1px 1px 1px black;
+}
+
+#cplpng {
+	height: 2%;
+	width: 2%;
+}
+
+#rankNameCPL {
+	text-shadow: 1px 1px 1px black;
+}
 
 
