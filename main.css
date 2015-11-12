@@ -53,7 +53,8 @@ body {
 .menuul {
 	list-style-type: none;
 	position: absolute;
-	top: 15px;
+	top: 35px;
+	right: 65px;
 
 }
 
@@ -61,6 +62,7 @@ body {
 	padding: 0;
 	position: absolute;
 	right: -300px;
+	z-index: 1;
 }
 
 /*Class for the styling of the first letter of each link*/
@@ -189,18 +191,29 @@ nav a:active {
 	text-align: center;
 }
 
+#rankTable .row {
+	margin-bottom: 15px;
+}
+
+.rankTableHeader {
+	font-size: 8pt;
+	text-shadow: 1px 1px 1px black;
+	border-bottom: 1px solid tan;
+}
+
 #colpng {
-	height: 2%;
-	width: 6%;
+	height: 3%;
+	width: 20%;
 }
 
 #ltcpng {
 	height: 4%;
-	width: 4%;
+	width: 10%;
 }
 
 .rankName {
 	font-size: 8pt;
+	text-shadow: 1px 1px 1px black;
 }
 
 #rankNameLTC {
@@ -210,87 +223,85 @@ nav a:active {
 
 #majpng {
 	height: 4%;
-	width: 4%;
+	width: 13%;
 }
 
 #rankNameMAJ {
 	position: relative;
 	top: 5px;
-	text-shadow: 1px 1px 1px black;
 }
 
 #cptpng {
-	height: 4%;
-	width: 5%;
+	height: 5%;
+	width: 17%;
 }
 
 #rankNameCPT {
 	position: relative;
 	top: 7px;
-	text-shadow: 1px 1px 1px black;
 }
 
 #ltpng {
 	height: 3%;
-	width: 4%;
+	width: 11%;
 }
 
 #rankName1LT {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #sgmpng {
 	height: 4%;
-	width: 4%;
+	width: 15%;
 }
 
 #rankNameSGM {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #msgpng {
 	height: 4%;
-	width: 4%;
+	width: 15%;
 }
 
 #rankNameMSG {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #sfcpng {
 	height: 4%;
-	width: 4%;
+	width: 15%;
 }
 
 #rankNameSFC {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #ssgpng {
 	height: 3%;
-	width: 2%;
+	width: 7%;
 }
 
 #rankNameSSG {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #sgtpng {
 	height: 3%;
-	width: 2%;
+	width: 7%;
 }
 
 #rankNameSGT {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 #cplpng {
 	height: 2%;
-	width: 2%;
+	width: 7%;
 }
 
 #rankNameCPL {
-	text-shadow: 1px 1px 1px black;
+	
 }
 
 
