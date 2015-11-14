@@ -55,7 +55,22 @@ body {
 	position: absolute;
 	top: 35px;
 	right: 65px;
+	font-size: 8pt;
+}
 
+.menuul > li {
+	display: inline;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+#admin {
+	font-size: 7pt;
+	color: gray;
+}
+
+.menuul :not(:last-child) {
+	border-right: 1px solid tan;
 }
 
 .mainnavul {
@@ -180,7 +195,7 @@ nav a:active {
 	display: inline-block;
 }
 
-#menuBtn:hover {
+#menuBtn:hover, #adminpanel:hover, #logout:hover {
 	cursor: hand;
 }
 
@@ -304,4 +319,30 @@ nav a:active {
 	
 }
 
+/*Styles for the Roster Page */
 
+#rosterTable {
+	margin: 150px;
+	text-align: center;
+	font-size: 8pt;
+	text-shadow: 1px 1px 1px black;
+}
+
+.rosterTableHeader {
+	border-bottom: 1px solid tan;
+}
+
+#rostercptpng {
+	width: 45%;
+	height: 4%;
+}
+
+#rosterGamertag1 {
+	position: relative;
+	top: 2px;
+}
+
+.rosterltpng {
+	height: 3%;
+	width: 32%;
+}
