@@ -1,4 +1,4 @@
-var main = angular.module("main", ["ngRoute", "firebase", "angular.filter"]);
+var main = angular.module("main", ["ngRoute", "firebase"]);
 
 main.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
