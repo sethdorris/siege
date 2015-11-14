@@ -1,6 +1,8 @@
 <nav>
 	<ul class="menuul">
-		<li id="menuBtn" ng-click="menuButton()"><span class="firstLetter">M</span>ENU</li></span>
+		<li id="menuBtn" ng-click="menuButton()"><span class="firstLetter">M</span>enu</li></span>
+		<li id="adminpanel" ng-if="authData != null"><span class="firstLetter">A</span>dmin Panel</li>
+		<li id="logout" ng-if="authData != null" ng-click="logout()"><span class="firstLetter">L</span>ogout</li>
 	</ul>
 	<ul class="mainnavul">
 		<li id="news" class="mainnavlinks"><a href="#/" ng-click="newsLink()" class="link"><span class="firstLetter">N</span>ews</a></li>
@@ -8,6 +10,7 @@
 		<li id="ranks" class="mainnavlinks"><a href="#/ranks" ng-click="ranksLink()"><span class="firstLetter">R</span>anks</a></li>
 		<li id="apply" class="mainnavlinks"><a href="#/apply" ng-click="applyLink()"><span class="firstLetter">A</span>pply</a></li>
 		<li id="forums" class="mainnavlinks"><a href="#" ng-click="forumsLink()"><span class="firstLetter">F</span>orums</a></li>
+		<li id="admin" class="mainnavlinks" ng-if="authData == null"><a href="#" ng-click="login()">ADMIN LOGIN</a></li>
 		<li id="closeMenu" class="mainnavlinks" ng-click="closeNav()">CLOSE</li>
 	</ul>
 </nav>
