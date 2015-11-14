@@ -1,9 +1,15 @@
-main.controller("navcontroller", function ($scope) {
+main.controller("navcontroller", ["$scope", "$firebaseAuth", 
+	function ($scope, $firebaseAuth) {
+
+	var ref = new Firebase("https://siege.firebaseio.com/");
+	$scope.authData;	
 	
 	$scope.menuButton = function () {
 		$(".mainnavul").removeClass('closed');
 		$(".mainnavul").addClass('active');
-		$("#menuBtn").addClass('menuButtonFadeOut')
+		$("#menuBtn").addClass('menuButtonFadeOut');
+		$("#adminpanel").addClass('menuButtonFadeOut');
+		$("#logout").addClass('menuButtonFadeOut');
 	}
 
 	$scope.closeNav = function () {
@@ -11,7 +17,11 @@ main.controller("navcontroller", function ($scope) {
 		$('.mainnavlinks').removeClass('clickedLink');
 		$('.mainnavul').addClass('closed');
 		$('#menuBtn').removeClass('menuButtonFadeOut');
+		$('#adminpanel').removeClass("menuButtonFadeOut");
+		$('#logout').removeClass('menuButtonFadeOut');
 		$('#menuBtn').addClass('menuButtonFadeIn');
+		$('#adminpanel').addClass("menuButtonFadeIn");
+		$('#logout').addClass('menuButtonFadeIn');
 	}
 	
 	$scope.newsLink = function () {
@@ -34,4 +44,25 @@ main.controller("navcontroller", function ($scope) {
 		$('#forums').addClass('clickedLink');
 	}
 
-});  //This is the end of the Controller
+	$scope.login = function () {
+		ref.authWithOAuthPopup("github", function (error, authData) {
+		console.log("Auth Data", authData);
+		$scope.authData = authData;
+		});
+	};
+
+	$scope.loggedIn = function () {
+		console.log($scope.authData);
+		if ($scope.authData == null) {
+			return false;
+		} else {
+			return true;
+		}
+	};
+
+	$scope.logout = function () {
+		$scope.authData = null;
+		console.log($scope.authData);
+	};
+
+}]);  //This is the end of the Controller
