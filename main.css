@@ -31,6 +31,7 @@ body {
 	height: 400px;
 	position: absolute;
 	bottom: 0;
+	z-index: -1;
 }
 
 /*Nav Menu Styling */
@@ -345,4 +346,28 @@ nav a:active {
 .rosterltpng {
 	height: 3%;
 	width: 32%;
+}
+
+/*Styles for apply form */
+
+#applicationForm {
+	width: 50%;
+	position: absolute;
+	margin: 8%;
+	left: 15%;
+}
+
+#applicationForm label {
+	font-size: 9pt;
+	text-shadow: 1px 1px 1px black;
+}
+
+#applicationForm input,
+#applicationForm select {
+	box-shadow: 1px 1px 1px black;
+}
+
+/*Syles for admin panel page */
+#pendingApps {
+	margin: 8%;
 }

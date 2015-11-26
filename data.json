@@ -1,0 +1,22 @@
+{
+	"news": [{
+		"date": "Nov 25, 2015",
+		"title": "First Post",
+		"content": "This is testing the first post",
+		"author": "StiffNasty"
+		}],
+	"applications": [{
+		"gamertag": "",
+		"timezone": "",
+		"occupation": "",
+		"age": "",
+		"microphone": ""
+		}],
+	"members": [{
+		"gamertag": "",
+		"role": "",
+		"games": "",
+		"age": "",
+		"rank": ""
+		}]
+}
