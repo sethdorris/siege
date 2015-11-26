@@ -12,13 +12,18 @@ main.config(['$routeProvider', function ($routeProvider) {
 	})
 	.when('/apply', {
 		templateUrl: 'partials/apply.html',
-		controller: 'rosterController'
+		controller: 'applyController'
 	})
 	.when('/ranks', {
 		templateUrl: 'partials/ranks.html',
 		controller: 'rosterController'
 	})
+	.when('/adminpanel', {
+		templateUrl: 'partials/adminpanel.html',
+		controller: 'adminController'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
-}])
+}]);
+
