@@ -1,0 +1,14 @@
+<div class="container-fluid" id="pendingApps">
+	<div class="row">
+		<div class="col-md-3" id="appHeadingGamertag">Gamertag</div>
+		<div class="col-md-3" id="appHeadingTimezone">Timezone</div>
+		<div class="col-md-3" id="appHeadingOccupation">Occupation</div>
+		<div class="col-md-3" id="appHeadingAge">Age</div>
+	</div>
+	<div class="row" ng-repeat="app in applications">
+		<div class="col-md-3" id="appHeadingGamertag">{{app.gamertag}}</div>
+		<div class="col-md-3" id="appHeadingTimezone">{{app.timezone}}</div>
+		<div class="col-md-3" id="appHeadingOccupation">{{app.occupation}}</div>
+		<div class="col-md-3" id="appHeadingAge">{{app.age}}</div>
+	</div>
+</div>
