@@ -1,6 +1,6 @@
 <div class="container-fluid" id="applicationForm">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12">
 
 			<div class="form-group">
 			<label for="appEmail">Email: (Used ONLY to contact regarding application status)</label>
@@ -20,7 +20,7 @@
 
 			<div class="form-group">
 			<label for="appTimezone">Timezone:</label>
-			<select name="appTimezone" class="form-control">
+			<select name="appTimezone" class="form-control" id="appTime">
 				<option value="AST">Atlantic Time</option>
 				<option value="EST">Eastern Time</option>
 				<option value="CST">Central Time</option>
@@ -32,20 +32,35 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 
 			<div class="form-group">
 			<label for="appAge">Age:</label>
-			<input type="text" class="form-control" id="appAge">
+			<input type="number" class="form-control" id="appAge">
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 
 			<div class="form-group">
 			<label for="appOccupation">Occupation:</label>
 			<input type="text" class="form-control" id="appOccupation">
 			</div>
 		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+				<label for="appMic">Microphone:</label>
+				<br>
+				<input type="radio" name="mic" value="yes" checked> Yes</input>
+				<input type="radio" name="mic" value="no"> No</input>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<button id="submitApp" class="form-control" ng-click="submit();">Submit</button>
+		</div>
+		<div class="col-md-4"></div>
 	</div>
 </div>
 		

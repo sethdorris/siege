@@ -4,7 +4,7 @@ main.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl: 'partials/news.html',
-		controller: 'rosterController'
+		controller: 'newsController'
 	})
 	.when('/roster', {
 		templateUrl: 'partials/roster.html',

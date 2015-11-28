@@ -351,9 +351,9 @@ nav a:active {
 /*Styles for apply form */
 
 #applicationForm {
-	width: 50%;
+	width: 40%;
 	position: absolute;
-	margin: 8%;
+	margin: 10%;
 	left: 15%;
 }
 
@@ -367,7 +367,79 @@ nav a:active {
 	box-shadow: 1px 1px 1px black;
 }
 
+#submitApp {
+	box-shadow: 1px 1px 1px black;
+}
+
+#submitApp:hover {
+	font-weight: bold;
+}
+
 /*Syles for admin panel page */
 #pendingApps {
-	margin: 8%;
+	margin: 10%;
+	text-shadow: 1px 1px 1px black;
+}
+
+.pendingAppsRowHeader {
+	font-size: 9pt;
+	border-bottom: 1px solid tan;
+}
+
+.openApps {
+	margin-top: 1%;
+	font-size: 8pt;
+}
+
+.acceptBtn {
+	margin-right: 1%;
+	padding: 3px;
+}
+
+.rejectBtn {
+	margin-left: 1%;
+	padding: 3px;
+}
+
+#appHeadingDecision {
+	text-align: center;
+}
+
+.appDecision {
+	text-align: center;
+}
+
+/*Styles for News Page*/
+
+.mainNewsContainer {
+	width: 50%;
+	margin-top: 2%;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+}
+
+.article {
+	border: 1px solid tan;
+	padding-left: 2%;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px black;
+	margin-bottom: 2%;
+	text-shadow: 1px 1px 1px black;
+}
+
+.postAuthor {
+	font-size: 8pt;
+	font-style: italic;
+	color: grey;
+	text-decoration: underline;
+	margin-bottom: 2%;
+}
+
+.postTitle {
+	font-family: Fjalla One;
+}
+
+.postContent {
+	font-size: 8pt;
 }

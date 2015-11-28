@@ -11,5 +11,30 @@ main.controller("adminController", ["$scope", "$firebaseAuth", "$firebaseArray",
 		console.log($scope.applications);
 		console.log($scope.members);
 
+		$scope.reject = function (app) {
+			console.log("app", app)
+			$scope.applications.$remove(app);
+		}
+
+		$scope.postNews = function () {
+			var newsAuthor = $("#newsAuthor").val();
+			var newsTitle = $("#newsTitle").val();
+			var newsDate = $("#newsDate").val();
+			var newsContent = $("#newsContent").val();
+			console.log("newsAuthor", newsAuthor);
+			console.log("newsTitle", newsTitle);
+			console.log("newsDate", newsDate);
+			console.log("newsContent", newsContent);
+			$scope.news.$add({
+				author: newsAuthor,
+				content: newsContent,
+				date: newsDate,
+				title: newsTitle
+			});
+			newsAuthor = " ";
+			newsTitle = " ";
+			newsDate = " ";
+			newsContent = " ";
+		}
 
 }]);
