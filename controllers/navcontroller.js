@@ -48,6 +48,7 @@ main.controller("navcontroller", ["$scope", "$firebaseAuth",
 		ref.authWithOAuthPopup("github", function (error, authData) {
 		console.log("Auth Data", authData);
 		$scope.authData = authData;
+		auth.setAuth(1);
 		});
 	};
 

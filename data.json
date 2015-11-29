@@ -1,9 +1,6 @@
 {
 	"news": [{
-		"date": "Nov 25, 2015",
-		"title": "First Post",
-		"content": "This is testing the first post",
-		"author": "StiffNasty"
+		
 		}],
 	"applications": [{
 		"gamertag": "",
@@ -13,10 +10,43 @@
 		"microphone": ""
 		}],
 	"members": [{
-		"gamertag": "",
-		"role": "",
-		"games": "",
-		"age": "",
-		"rank": ""
+		"gamertag": "StiffNasty",
+		"role": "Co-Founder / Starter",
+		"games": "Siege",
+		"age": "28",
+		"rank": "",
+		"timezone": "CST"
+		},
+		{
+		"gamertag": "DTS1186",
+		"role": "Starter",
+		"games": "Siege",
+		"age": "28",
+		"rank": "",
+		"timezone": "CST"
+		},
+		{
+		"gamertag": "M1chael_B01t0n",
+		"role": "Starter",
+		"games": "Siege",
+		"age": "28",
+		"rank": "",
+		"timezone": "CST"
+		},
+		{
+		"gamertag": "Turbine951",
+		"role": "Starter",
+		"games": "Siege",
+		"age": "28",
+		"rank": "",
+		"timezone": "CST"
+		},
+		{
+		"gamertag": "NutzInYourFac",
+		"role": "Starter",
+		"games": "Siege",
+		"age": "28",
+		"rank": "",
+		"timezone": "CST"
 		}]
 }

@@ -1,4 +1,7 @@
 <div class="container-fluid" id="pendingApps">
+	<div class="row">
+		<div class="col-md-12">PENDING APPLICANTS</div>
+	</div>
 	<div class="row pendingAppsRowHeader">
 		<div class="col-md-2" id="appHeadingGamertag">Gamertag</div>
 		<div class="col-md-2" id="appHeadingTimezone">Timezone</div>
@@ -14,13 +17,16 @@
 		<div class="col-md-2 appAge">{{app.age}}</div>
 		<div class="col-md-2 appMic">{{app.mic}}</div>
 		<div class="col-md-2 appDecision">
-			<button class="btn btn-default btn-sm acceptBtn"><span class="glyphicon glyphicon-ok"></span></button>
+			<button class="btn btn-default btn-sm acceptBtn" ng-click="accept(app);"><span class="glyphicon glyphicon-ok"></span></button>
 			<button class="btn btn-default btn-sm rejectBtn" ng-click="reject(app);"><span class="glyphicon glyphicon-remove"></span></button>
 		</div>
 	</div>
 </div>
 
 <div class="container-fluid" id="postingNews">
+	<div class="row" id="postingNewsHeading">
+		<div class="col-md-12">POST NEWS</div>
+	</div>
 	<div class="row">
 		<div class="col-md-2 form-group">
 			<label for="newsAuthor">Author:</label>
@@ -36,10 +42,34 @@
 		</div>
 		<div class="col-md-4 form-group">
 			<label for="newsContent">Content:</label>
-			<input type="text" id="newsContent" class="form-control"></label>
+			<textarea id="newsContent" class="form-control"></textarea>
 		</div>
 		<div class="col-md-2">
 			<button id="submitNews" ng-click="postNews();" class="btn btn-default btn-sm">Submit</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="adminMembers">
+	<div class="row">
+		<div class="col-md-12">MEMBERS</div>
+	</div>
+	<div class="row pendingAppsRowHeader">
+		<div class="col-md-2" id="appHeadingGamertag">Gamertag</div>
+		<div class="col-md-2" id="appHeadingTimezone">Timezone</div>
+		<div class="col-md-2" id="appHeadingOccupation">Occupation</div>
+		<div class="col-md-2" id="appHeadingAge">Age</div>
+		<div class="col-md-2" id="appHeadingMic">Mic</div>
+		<div class="col-md-2" id="appHeadingDecision">Decision</div>
+	</div>
+	<div class="row openApps" ng-repeat="member in members">
+		<div class="col-md-2 memGamertag">{{member.gamertag}}</div>
+		<div class="col-md-2 memTimezone">{{member.timezone}}</div>
+		<div class="col-md-2 memOccupation">{{member.occupation}}</div>
+		<div class="col-md-2 memAge">{{member.age}}</div>
+		<div class="col-md-2 memMic">{{member.mic}}</div>
+		<div class="col-md-2 appDecision">
+			<button class="btn btn-default btn-sm acceptBtn" ng-click="edit(app);">EDIT</button>
 		</div>
 	</div>
 </div>

@@ -16,6 +16,19 @@ main.controller("adminController", ["$scope", "$firebaseAuth", "$firebaseArray",
 			$scope.applications.$remove(app);
 		}
 
+		$scope.accept = function(app) {
+			console.log("app", app);
+			$scope.members.$add({
+				gamertag: app.gamertag,
+				timezone: app.timezone
+			});
+			$scope.applications.$remove(app);
+		}
+
+		$scope.edit = function(app) {
+			
+		}
+
 		$scope.postNews = function () {
 			var newsAuthor = $("#newsAuthor").val();
 			var newsTitle = $("#newsTitle").val();

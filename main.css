@@ -350,11 +350,19 @@ nav a:active {
 
 /*Styles for apply form */
 
+.applicationRequirements {
+	border: 1px solid #545454;
+	background: rgba(0, 0, 0, .8);
+	border-radius: 5px;
+	padding: 2% 2% 2% 2%;
+	margin-bottom: 5%;
+	font-size: 9pt;
+}
+
 #applicationForm {
-	width: 40%;
+	width: 70%;
 	position: absolute;
-	margin: 10%;
-	left: 15%;
+	margin: 5% 10% 0 15%;
 }
 
 #applicationForm label {
@@ -376,9 +384,23 @@ nav a:active {
 }
 
 /*Syles for admin panel page */
+#adminMembers {
+	width: 70%;
+	margin-top: 8%;
+}
+
+#adminMembers > div.row > div.col-md-12 {
+	 text-align: center;
+}
+
 #pendingApps {
-	margin: 10%;
+	width: 70%;
+	margin-top: 10%;
 	text-shadow: 1px 1px 1px black;
+}
+
+#pendingApps {
+	text-align: center;
 }
 
 .pendingAppsRowHeader {
@@ -409,6 +431,22 @@ nav a:active {
 	text-align: center;
 }
 
+#postingNews {
+	width: 70%;
+	margin-top: 10%;
+	text-shadow: 1px 1px 1px black;
+	font-size: 9pt;
+}
+
+#postingNewsHeading {
+	text-align: center;
+	font-size: 12pt;
+}
+
+#submitNews {
+	margin: 20%;
+}
+
 /*Styles for News Page*/
 
 .mainNewsContainer {
@@ -420,7 +458,8 @@ nav a:active {
 }
 
 .article {
-	border: 1px solid tan;
+	border: 1px solid #545454;
+	background: rgba(0,0,0,.8);
 	padding-left: 2%;
 	border-radius: 5px;
 	box-shadow: 2px 3px 3px black;
@@ -433,13 +472,15 @@ nav a:active {
 	font-style: italic;
 	color: grey;
 	text-decoration: underline;
-	margin-bottom: 2%;
+	margin: 0 2% 0 2%;
 }
 
 .postTitle {
 	font-family: Fjalla One;
+	margin: 2% 2% 0 2%;
 }
 
 .postContent {
 	font-size: 8pt;
+	margin: 2% 2% 3% 2%;
 }
