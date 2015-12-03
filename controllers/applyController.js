@@ -13,10 +13,14 @@ main.controller("applyController", ["$scope", "$firebaseAuth", "$firebaseArray",
 
 			$scope.applications.$add({
 				age: appAge,
+				email: appEmail,
 				gamertag: appGamertag,
 				timezone: appTime,
 				occupation: appOccupation,
 				mic: appMic
+			}).then(function (data) {
+                $("#submitApp").addClass("successful");
+                $("#submitApp").text("SUCCESS!")
 			});
 		};
 
