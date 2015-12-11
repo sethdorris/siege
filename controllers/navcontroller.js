@@ -2,7 +2,11 @@ main.controller("navcontroller", ["$scope", "$firebaseAuth",
 	function ($scope, $firebaseAuth) {
 
 	var ref = new Firebase("https://siege.firebaseio.com/");
-	$scope.authData;	
+	ref.onAuth(function (authdata) {
+		$scope.authData = authdata.uid;
+		console.log("$scop", $scope.authData);
+	})
+		
 	
 	$scope.menuButton = function () {
 		$(".mainnavul").removeClass('closed');

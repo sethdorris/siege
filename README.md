@@ -8,10 +8,11 @@
 
 ## Features Implemented
 1. Custom animations -> Nav panel and provide user feedback on successful submission of application on the apply page.
-2. Admin panel -> Functionality includes, Posting News Stories, Reviewing Applications (Accept and Reject), Updating current members information.
+2. Admin panel -> Functionality includes, Posting News Stories, Reviewing Applications (Accept and Reject), Updating current members information. Auth State remains for 24 days.
 
 ## To Do
 1. Continue to develop Admin Panel and style the admin functions.
-2. Refactor admin authentication.
-3. Add responsiveness.
+2. Add responsiveness.
+
+
 
