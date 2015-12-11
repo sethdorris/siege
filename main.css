@@ -470,12 +470,20 @@ nav a:active {
 
 /*Styles for News Page*/
 
-.mainNewsContainer {
+.NEWS {
 	width: 50%;
-	margin-top: 2%;
 	position: absolute;
 	top: 10%;
 	left: 25%;
+}
+
+.stickyNews {
+	margin-top: 2%;
+}
+
+.mainNewsContainer {
+	margin-top: 10px;
+	position: relative;
 }
 
 .article {
@@ -483,9 +491,7 @@ nav a:active {
 	background: rgba(0,0,0,.8);
 	padding-left: 2%;
 	border-radius: 5px;
-	box-shadow: 2px 3px 3px black;
 	margin-bottom: 2%;
-	text-shadow: 1px 1px 1px black;
 }
 
 .postAuthor {

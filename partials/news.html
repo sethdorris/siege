@@ -1,31 +1,29 @@
-<div class="container-fluid mainNewsContainer">
-	<div class="row article">
-		<div class="row">
-			<div class="col-md-12 postTitle">WELCOME TO CLAN GTXT</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 postAuthor">Posted by: StiffNasty on Nov 28, 2015 @ 6:34pm</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 postContent">Welcome to Clan GTXT. We are a Rainbow Six Siege clan on the Playstation 4 platform.<br>
-				We compete online on the GameBattles Ladders and we also hope to participate in at least one LAN event.
-				<p></p>
-				<p>If you are interested in joining the clan click <a href="#/apply">here </a></p>
+
+<div class="container-fluid NEWS">
+		<div class="row article stickyNews">
+			<div class="row">
+				<div class="col-md-12 postTitle">WELCOME TO CLAN GTXT</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 postAuthor">Posted by: StiffNasty on Nov 28, 2015 @ 6:34pm</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 postContent">Welcome to Clan GTXT. We are a Rainbow Six Siege clan on the Playstation 4 platform.<br>
+					We compete online on the GameBattles Ladders and we also hope to participate in at least one LAN event.
+					<p></p>
+					<p>If you are interested in joining the clan click <a href="#/apply">here </a></p>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="container-fluid mainNewsContainer">
-	<div class="row article" ng-repeat="post in news | orderBy: '-date' | limitTo: 5">
-		<div class="row">
-			<div class="col-md-12 postTitle">{{post.title}}</div>
+		<div class="row article mainNewsContainer" ng-repeat="post in news | orderBy: '-date' | limitTo: 5">
+			<div class="row">
+				<div class="col-md-12 postTitle">{{post.title}}</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 postAuthor">Posted by: {{post.author}} on {{post.date}}</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 postContent">{{post.content}}</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 postAuthor">Posted by: {{post.author}} on {{post.date}}</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 postContent">{{post.content}}</div>
-		</div>
-	</div>
 </div>
