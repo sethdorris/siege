@@ -23,8 +23,20 @@ body {
 	}
 }
 
+@-webkit-keyframes rollingSmoke {
+	from{
+		background-position: 0;
+		opacity: .2;
+	}
+	to {
+		background-position: 1000px;
+		opacity: .2;
+	}
+}
+
 .smoke {
 	animation: 60s rollingSmoke infinite;
+	-webkit-animation: 60s rollingSmoke;
 	background: url('smoke.png');
 	/*background-size: cover;*/
 	width: 100%;
