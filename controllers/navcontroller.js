@@ -3,8 +3,13 @@ main.controller("navcontroller", ["$scope", "$firebaseAuth",
 
 	var ref = new Firebase("https://siege.firebaseio.com/");
 	ref.onAuth(function (authdata) {
-		$scope.authData = authdata.uid;
-		console.log("$scop", $scope.authData);
+		try {
+			$scope.authData = authdata.uid;
+		}
+		catch (e) {
+			console.log("This")
+		}
+		
 	})
 		
 	
