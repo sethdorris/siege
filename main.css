@@ -1,11 +1,7 @@
 body {
-	background: url('background.jpg'), linear-gradient(gray 0%, white 33%, black 100%);
-	background-image: url('background.jpg'),
-			-webkit-linear-gradient(gray 0%, white 33%, black 100%);
-
-			background-blend-mode: multiply;
-	-webkit-background-blend-mode: multiply;
-	
+	background-image: url('background.jpg'), -webkit-linear-gradient(gray 0%, white 33%, black 100%);
+	background-image: url('background.jpg'), linear-gradient(gray 0%, white 33%, black 100%);
+	background-color: #222;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Raleway", sans-serif;
@@ -37,8 +33,8 @@ body {
 .smoke {
 	animation: 60s rollingSmoke infinite;
 	-webkit-animation: 60s rollingSmoke;
-	background: url('smoke.png');
-	/*background-size: cover;*/
+	background-image: url('smoke.png');
+	background-size: cover;
 	width: 100%;
 	height: 400px;
 	position: absolute;
@@ -113,8 +109,32 @@ body {
 		top: 0;
 	}
 }
+@-webkit-keyframes navslide {
+	from {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
 /*Nav Close Animation */
 @keyframes navslideClose {
+	from {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+}
+@-webkit-keyframes navslideClose {
 	from {
 		position: absolute;
 		right: 0;
@@ -139,8 +159,28 @@ body {
 		background: #555;
 	}
 }
+@-webkit-keyframes clickedFlash {
+	0% {
+		background: #555;
+	}
+
+	50% {
+		background: #222;
+	}
+	100% {
+		background: #555;
+	}
+}
 
 @keyframes menuFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes menuFadeIn {
 	0% {
 		opacity: 0;
 	}
@@ -157,27 +197,43 @@ body {
 		opacity: 0;
 	}
 }
+@-webkit-keyframes menuFadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
 
 .menuButtonFadeIn {
 	animation: 1s menuFadeIn;
+	-webkit-animation: 1s menuFadein;
 	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .menuButtonFadeOut {
 	animation: 1s menuFadeOut;
+	-webkit-animation: 1s menuFadein;
 	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
 /*Class that contains the animation when the nav menu opens*/
 .active {
 	animation: 2s navslide;
+	-webkit-animation: 2s navslide;
 	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
 /*Class that contains the animation when the nav menu closes*/
 .closed {
 	animation: 2s navslideClose;
+	-webkit-animation: 2s navslideClose;
 	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
 /*close menu button style*/
@@ -190,6 +246,7 @@ body {
 /*Class that gives the flash to the link when clicked */
 .clickedLink {
 	animation: .2s clickedFlash 3;
+	-webkit-animation: .2s clickedFlash 3;
 }
 
 /*Class for the styling of the anchor tags in the nav menu*/
@@ -401,11 +458,24 @@ nav a:active {
 
 .successful {
 	animation: 1s success;
+	-webkit-animation: 1s success;
 	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwads;
 	border: 1px solid black;
 }
 
 @keyframes success {
+	0% {
+		background-color: green;
+		opacity: 0;
+	}
+	100% {
+		background-color: green;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes success {
 	0% {
 		background-color: green;
 		opacity: 0;
