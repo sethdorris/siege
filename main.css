@@ -6,6 +6,7 @@ body {
 	background-size: cover;
 	font-family: "Raleway", sans-serif;
 	color: white;
+	height: 100%;
 }
 
 @keyframes rollingSmoke {
@@ -32,7 +33,7 @@ body {
 
 .smoke {
 	animation: 60s rollingSmoke infinite;
-	-webkit-animation: 60s rollingSmoke;
+	-webkit-animation: 60s rollingSmoke infinite;
 	background-image: url('smoke.png');
 	background-size: cover;
 	width: 100%;
@@ -85,7 +86,7 @@ body {
 .mainnavul {
 	padding: 0;
 	position: absolute;
-	right: -300px;
+	right: -300%;
 	z-index: 1;
 }
 
@@ -598,4 +599,59 @@ nav a:active {
 	body {
 		width: 420px;
 	}
+	@keyframes navslide {
+	from {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+@-webkit-keyframes navslide {
+	from {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+/*Nav Close Animation */
+@keyframes navslideClose {
+	from {
+		position: absolute;
+		right: -300;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+@-webkit-keyframes navslideClose {
+	from {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	to {
+		position: absolute;
+		right: -300px;
+		top: 0;
+	}
+}
+
+#applicationForm {
+	width: 70%;
+	position: absolute;
+	margin: 17% 10% 0 15%;
+}
 }
