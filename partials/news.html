@@ -26,4 +26,15 @@
 				<div class="col-md-12 postContent">{{post.content}}</div>
 			</div>
 		</div>
+		
+		<div class="chatboxContainer article row">
+			<ul>
+				<li ng-repeat="message in messages">{{message.username}}:: {{message.message}}</li>
+			</ul>
+		</div>
+		<div class="form-group">
+			<input type="text" id="chatboxUsername" class="form-control" placeholder="PS4 Gamertag">
+			<input type="text" id="chatboxMessage" class="form-control" placeholder="Message Content">
+			<input type="submit" ng-click="postMessage()">Submit Message</input>
+		</div>
 </div>
